@@ -1,0 +1,22 @@
+{
+  "name": "create-readme",
+  "version": "1.0.0",
+  "description": "create read.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-boot-camp/potential-enigma.git"
+  },
+  "author": "jani muhlestein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coding-boot-camp/create-readme/issues"
+  },
+  "homepage": "https://github.com/coding-boot-camp/create-readme#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
