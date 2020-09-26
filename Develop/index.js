@@ -1,5 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
+const generatePage = require('../src/generatePage.js');
 
 // array of questions for user
 const questions = () => {
@@ -7,7 +9,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'name',
-            message: 'What is the project name? (Required',
+            message: 'What is the project name? (Required)',
             validate: nameInput => {
                 if(nameInput) {
                     return true;
@@ -20,7 +22,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'description',
-            message: 'Enter a description of your projects.',
+            message: 'Enter a description of your projects. (Required)',
             validate: descriptionInput => {
                 if(descriptionInput) {
                     return true;
@@ -33,7 +35,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'installation',
-            message: 'Enter installation instructions.',
+            message: 'Enter installation instructions.(Required)',
             validate: installationInput => {
                 if(installationInput) {
                     return true;
@@ -118,6 +120,11 @@ const questions = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'input',
+            name: 'credit',
+            message: 'Who do you need to give credit to?'
         }
     ]);
 };
@@ -133,9 +140,30 @@ function init() {
 }
 
 // function call to initialize program
-init();
+//init();
+/*
+questions()
+.then(answers => {
+    return generatePage(answers);
+})
+then(page =>{
+    return generateMarkdown(page);
+})
+.catch(err => {
+    console.log(err);
+});
+*/
 
 questions()
 .then(answers => {
-    console.log(answers);
+    return generatePage(answers);
+})
+.then(page => {
+    return generateMarkdown(page);
+})
+.then(generateMarkdownResponse => {
+    console.log(generateMarkdownResponse);
+})
+.catch(err => {
+    console.log(err);
 });
