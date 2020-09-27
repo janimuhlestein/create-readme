@@ -92,7 +92,9 @@ const questions = () => {
             choices: [
                 'MIT',
                 'Apache',
-                'GPL'
+                'Mozilla',
+                'GNU',
+                'Open Data Commons'
             ]
         },
         {
@@ -129,31 +131,7 @@ const questions = () => {
     ]);
 };
 
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-//init();
-/*
-questions()
-.then(answers => {
-    return generatePage(answers);
-})
-then(page =>{
-    return generateMarkdown(page);
-})
-.catch(err => {
-    console.log(err);
-});
-*/
-
+//ask the questions, and then generate the page, then create the markdown.
 questions()
 .then(answers => {
     return generatePage(answers);
