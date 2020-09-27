@@ -1,8 +1,12 @@
 
-# Run Buddy
+# Portfolio Generator 
+        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+        
 
 ## Description
-A running program that aids the user in finding a personal trainer to assist them in increasing their running capabilities. Several different levels exist, allowing the user to get training help on a daily, weekly, or bi-weekly basis. This project came about because of the need, during these difficult times, for a virtual trainer.
+An automatic portfolio generation program that will allow the user to create a professional portfolio much easier than before.
 
 ## Table of Contents
 [Installation](#installation)
@@ -10,22 +14,26 @@ A running program that aids the user in finding a personal trainer to assist the
 [License](#License)
 
 ## Installation
-All you have to do is to open the github.io page, and you can run the application.
+Download to your machine. Ensure that you have  node properly installed, and then run node init and follow instructions. Then, you will have to install inquirer, by running npm install inquirer.
 
 ## Usage
-Go ahead and enter your name and email address and telpehone number, and we'll set up a consultation.
+Once you have node and inquirer properly installed, simply run node app from the terminal.
 
 ## License
-MIT  ![GitHub](https://img.shields.io/github/license/janimuhlestein/SongNews?style=plastic)
-        
+MIT
 
 ## Collaborate
-Call me! I'd love to have some help in getting this going.
+If you want to contribute to this program, contact the great folks at the U of U.
 
 ## Credits
-Jesse, Jason, Logan, and Laurie.
+The great people at U of U bootcamp, and Jesse, Jason, Logan, and Laurie.
 
 ## Tests
-undefined
+Testing should be done by terminal. Attempt to enter invalid options, like no name. It should have error checking.
+
+## Questions
+Please feel free to contact me at janimuhlestein@gmail.com, and have a look at my other projects at my GitHub account
+at [GitHub](https://github.com/janimuhlestein).
+
 
     
